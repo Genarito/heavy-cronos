@@ -1,0 +1,27 @@
+{
+  "name": "heavy-cronos",
+  "version": "1.0.1",
+  "description": "Prevent multiples calls to heavy task functions",
+  "main": "Cronos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Genarito/cronos.git"
+  },
+  "keywords": [
+    "prevent",
+    "multiple",
+    "calls",
+    "heavy",
+    "tasks",
+    "functions"
+  ],
+  "author": "Genaro Camele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Genarito/cronos/issues"
+  },
+  "homepage": "https://github.com/Genarito/cronos#readme"
+}
