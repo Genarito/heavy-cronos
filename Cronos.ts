@@ -80,4 +80,4 @@ class Cronos {
     }
 }
 
-export { Cronos };
+export default Cronos;
