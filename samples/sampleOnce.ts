@@ -1,4 +1,4 @@
-import { Cronos } from '../Cronos';
+import Cronos from '../Cronos';
 
 let cronos = new Cronos(() => {
     console.log('It works!');

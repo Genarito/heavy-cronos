@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var Cronos_1 = require("../Cronos");
-var cronos = new Cronos_1.Cronos(function () {
+var cronos = new Cronos_1["default"](function () {
     console.log('It works!');
 }, 3000, 'once');
 cronos.run(); // Prints 'It works!'

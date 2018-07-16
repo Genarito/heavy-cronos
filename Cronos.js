@@ -4,7 +4,7 @@ var Cronos = /** @class */ (function () {
     /**
      * Constructor
      * @param functionToExcecute Function to excecute when time was met
-     * @param timeToWait Time to wait to prevente excecutions
+     * @param timeToWait Time to wait (miliseconds) to prevent excecutions
      * @param method 'avoid', 'once', 'every' to prevent excecute function if time was not met, execute once when time is reached, or excecute as many times as run() was called when time is reached
      */
     function Cronos(functionToExcecute, timeToWait, method) {
@@ -30,6 +30,12 @@ var Cronos = /** @class */ (function () {
                 this.addFunction(timeDiff);
             }
         }
+    };
+    /**
+     * Force last excecution time update to current time
+     */
+    Cronos.prototype.updateLastTime = function () {
+        this.lastExcecutionTime = new Date();
     };
     /**
      * Increments the count the function must be excecuted
@@ -72,4 +78,4 @@ var Cronos = /** @class */ (function () {
     };
     return Cronos;
 }());
-exports.Cronos = Cronos;
+exports["default"] = Cronos;

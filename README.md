@@ -19,7 +19,7 @@ Or if you're using Yarn
 ## Usage
 
 ```javascript
-import { Cronos } from '../Cronos';
+import Cronos from 'heavy-cronos';
 
 let cronos = new Cronos(() => {
     console.log('It works!');
