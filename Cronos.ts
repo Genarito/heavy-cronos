@@ -29,6 +29,13 @@ class Cronos {
     }
 
     /**
+     * Force last excecution time update to current time
+     */
+    public updateLastTime() {
+        this.lastExcecutionTime = new Date();
+    }
+
+    /**
      * Increments the count the function must be excecuted
      * @param timeDiff Time to wait in case we are creating the interval
      */
