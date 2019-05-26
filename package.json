@@ -1,14 +1,19 @@
 {
   "name": "heavy-cronos",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Prevent multiples calls to heavy task functions",
-  "main": "Cronos.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "dist/Cronos.js",
+  "umd:main": "dist/Cronos.umd.js",
+  "module": "dist/Cronos.mjs",
+  "source": "src/Cronos.ts",
+  "types": "dist/Cronos.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Genarito/cronos.git"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
   "keywords": [
     "prevent",
@@ -23,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/Genarito/cronos/issues"
   },
-  "homepage": "https://github.com/Genarito/cronos#readme"
+  "homepage": "https://github.com/Genarito/cronos#readme",
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  }
 }
