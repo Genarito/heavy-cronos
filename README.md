@@ -29,7 +29,7 @@ let cronos = new Cronos(() => {
 }, 3000, 'avoid');
 
 cronos.run(); // Prints 'It works!'
-cronos.run(); // Waits for 3 seconds
+cronos.run(); // It will be ignored
 cronos.run(); // It will be ignored
 cronos.run(); // It will be ignored
 cronos.run(); // It will be ignored
